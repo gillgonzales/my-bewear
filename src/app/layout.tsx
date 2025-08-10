@@ -29,9 +29,14 @@ export default function RootLayout({
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
-        <nav className="flex gap-4">
-          <Link href="/">Home</Link>
-          <Link href="/product">Product</Link>
+        <nav className="flex py-2 mb-2 justify-between text-gray-300 font-bold gap-4 bg-primary">
+          <div className=" ml-3 flex gap-4">
+            <Link href="/">Home</Link>
+            <Link href="/product">Product</Link>
+          </div>
+          <div className="mx-4">
+            <Link href="/auth">Auth</Link>
+          </div>
         </nav>
         {children}
       </body>
